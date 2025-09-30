@@ -101,5 +101,42 @@ classDiagram
 
 ```
 
+2. ### Caso de Uso
+Ilustra as interações dos diferentes tipos de usuários(Atores) com as funcionalidades do sistema
+- Técnico: Gerenciar Ordem de Serviço (CRUD) e acessar o DashBoard
+- Gerente: funções do técnico + Gerenciamento de Equipamentos (CRUD)
+- Admin: Gerenciar Usuários, Acessar o Dashboard
 
+Todos Devem Fazer o login antes de qualquer ação
 
+```mermaid
+
+graph TD 
+
+    subgraph "SGM"
+        caso1([Fazer Login])
+        caso2([Gerenciar Ordens de Serviço - CRUD])
+        caso3([Gerenciar Equipamentos - CRUD])
+        caso4([Gerenciar Usuários])
+        caso5([Acessar o Dasboard])
+    end
+
+    Tenico([tecnico de manutenção])
+    gerente([gerente de manutenção])
+    admin([administrador do sistema])
+
+    tecnico --> caso1
+    tecnico --> caso2
+    tecnico --> caso5
+
+    gerente --> caso1
+    gerente --> caso2
+    gerente --> caso3
+    gerente --> caso5
+
+    admin -.-> caso2
+    admin -.-> caso3
+    admin -.-> caso4
+    admin -.-> caso5
+
+```
