@@ -166,3 +166,26 @@ graph TD
     D --> NÃO --> G[MEnsagem de Erro] --> B
 
 ```
+
+## Riscos de Gerenciamento
+
+| ID  | Risco                             | Probabilidade | Impacto | Mitigação |
+|-----|-----------------------------------|---------------|---------|-----------|
+| 5   | Aumento do escopo (Scope Creep)   | Alta          | Média   | Formalizar processo de controle de mudanças e avaliar impacto em prazo/custo antes da aprovação. |
+| 6   | Atraso na entrega do projeto      | Alta          | Média   | Utilizar metodologias ágeis, reavaliar cronograma a cada sprint e manter comunicação transparente sobre progresso. |
+| 7   | Requisitos mal interpretados      | Média         | Alto    | Validar protótipos e wireframes com usuários finais e manter comunicação constante para esclarecimento. |
+
+---
+
+## Riscos Organizacionais
+
+| ID  | Risco                                    | Probabilidade | Impacto | Mitigação |
+|-----|------------------------------------------|---------------|---------|-----------|
+| 8   | Resistência dos usuários à nova ferramenta | Média       | Alto    | Envolver usuários-chave desde o início, criar interface amigável (UI/UX) e comunicar benefícios do sistema. |
+| 9   | Inserção de dados incorretos no sistema  | Média         | Alto    | Implementar validações robustas nos formulários e, se possível, importar/validar dados existentes. |
+| 10  | Falta de treinamento para os usuários    | Média         | Média   | Criar manuais de usuário, realizar treinamentos práticos por perfil (técnico, gestor, administrador) e oferecer suporte. |
+
+---
+
+## prototipagem
+
